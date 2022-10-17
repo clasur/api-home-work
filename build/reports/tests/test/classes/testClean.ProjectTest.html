@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">10.122s</div>
+<div class="counter">10.864s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,8 +78,8 @@
 </tr>
 </thead>
 <tr>
-<td class="success">verifyCRUDProject()</td>
-<td class="success">10.122s</td>
+<td class="success">verifyCRUDItem()</td>
+<td class="success">10.864s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -88,7 +88,7 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>Request method:	POST
-Request URI:	https://todo.ly/api/projects.json
+Request URI:	https://todo.ly/api/items.json
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -100,44 +100,52 @@ Headers:		Authorization=Basic dWNiMjAyMkB1Y2IyMDIyLmNvbToxMjM0NQ==
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:
-{&quot;Content&quot;:&quot;Cato2022&quot;}
+{&quot;Content&quot;:&quot;CreateNewItem&quot;,&quot;ProjectId&quot;:4021963}
 HTTP/1.1 200 OK
 Cache-Control: no-cache, no-store, must-revalidate
 Pragma: no-cache
 Content-Type: application/json; charset=utf-8
 Expires: -1
 Server: Microsoft-IIS/8.0
-Set-Cookie: ASP.NET_SessionId=ol3qdubmxlsookmv4jk3545b; path=/; HttpOnly; SameSite=Lax
+Set-Cookie: ASP.NET_SessionId=cfrchw3ocucimo4i1rysbadf; path=/; HttpOnly; SameSite=Lax
 X-AspNetMvc-Version: 2.0
 X-AspNet-Version: 4.0.30319
 X-Powered-By: ASP.NET
-Date: Sun, 16 Oct 2022 22:14:03 GMT
-Content-Length: 398
+Date: Mon, 17 Oct 2022 02:03:20 GMT
+Content-Length: 534
 
 {
-    &quot;Id&quot;: 4026071,
-    &quot;Content&quot;: &quot;Cato2022&quot;,
-    &quot;ItemsCount&quot;: 0,
-    &quot;Icon&quot;: 0,
-    &quot;ItemType&quot;: 2,
+    &quot;Id&quot;: 11067815,
+    &quot;Content&quot;: &quot;CreateNewItem&quot;,
+    &quot;ItemType&quot;: 1,
+    &quot;Checked&quot;: false,
+    &quot;ProjectId&quot;: 4021963,
     &quot;ParentId&quot;: null,
+    &quot;Path&quot;: &quot;&quot;,
     &quot;Collapsed&quot;: false,
-    &quot;ItemOrder&quot;: 436,
+    &quot;DateString&quot;: null,
+    &quot;DateStringPriority&quot;: 0,
+    &quot;DueDate&quot;: &quot;&quot;,
+    &quot;Recurrence&quot;: null,
+    &quot;ItemOrder&quot;: 2,
+    &quot;Priority&quot;: 4,
+    &quot;LastSyncedDateTime&quot;: &quot;/Date(1665972201899)/&quot;,
     &quot;Children&quot;: [
         
     ],
-    &quot;IsProjectShared&quot;: false,
-    &quot;ProjectShareOwnerName&quot;: null,
-    &quot;ProjectShareOwnerEmail&quot;: null,
-    &quot;IsShareApproved&quot;: false,
-    &quot;IsOwnProject&quot;: true,
-    &quot;LastSyncedDateTime&quot;: &quot;/Date(1665958443850)/&quot;,
-    &quot;LastUpdatedDate&quot;: &quot;/Date(1665958443850)/&quot;,
+    &quot;DueDateTime&quot;: null,
+    &quot;CreatedDate&quot;: &quot;/Date(1665972201883)/&quot;,
+    &quot;LastCheckedDate&quot;: null,
+    &quot;LastUpdatedDate&quot;: &quot;/Date(1665972201883)/&quot;,
     &quot;Deleted&quot;: false,
-    &quot;SyncClientCreationId&quot;: null
+    &quot;Notes&quot;: &quot;&quot;,
+    &quot;InHistory&quot;: false,
+    &quot;SyncClientCreationId&quot;: null,
+    &quot;DueTimeSpecified&quot;: true,
+    &quot;OwnerId&quot;: 705560
 }
 Request method:	PUT
-Request URI:	https://todo.ly/api/projects/4026071.json
+Request URI:	https://todo.ly/api/items/11067815.json
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -149,44 +157,52 @@ Headers:		Authorization=Basic dWNiMjAyMkB1Y2IyMDIyLmNvbToxMjM0NQ==
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:
-{&quot;Content&quot;:&quot;CatoUpdated2022&quot;}
+{&quot;Checked&quot;:true,&quot;Content&quot;:&quot;CreateNewItem&quot;,&quot;ProjectId&quot;:4021963}
 HTTP/1.1 200 OK
 Cache-Control: no-cache, no-store, must-revalidate
 Pragma: no-cache
 Content-Type: application/json; charset=utf-8
 Expires: -1
 Server: Microsoft-IIS/8.0
-Set-Cookie: ASP.NET_SessionId=25hhnhqilkgygd1b1rg4ogbo; path=/; HttpOnly; SameSite=Lax
+Set-Cookie: ASP.NET_SessionId=wtfcinoanbqedcngonr0q5rc; path=/; HttpOnly; SameSite=Lax
 X-AspNetMvc-Version: 2.0
 X-AspNet-Version: 4.0.30319
 X-Powered-By: ASP.NET
-Date: Sun, 16 Oct 2022 22:14:05 GMT
-Content-Length: 405
+Date: Mon, 17 Oct 2022 02:03:24 GMT
+Content-Length: 553
 
 {
-    &quot;Id&quot;: 4026071,
-    &quot;Content&quot;: &quot;CatoUpdated2022&quot;,
-    &quot;ItemsCount&quot;: 0,
-    &quot;Icon&quot;: 0,
-    &quot;ItemType&quot;: 2,
+    &quot;Id&quot;: 11067815,
+    &quot;Content&quot;: &quot;CreateNewItem&quot;,
+    &quot;ItemType&quot;: 1,
+    &quot;Checked&quot;: true,
+    &quot;ProjectId&quot;: 4021963,
     &quot;ParentId&quot;: null,
+    &quot;Path&quot;: &quot;&quot;,
     &quot;Collapsed&quot;: false,
-    &quot;ItemOrder&quot;: 436,
+    &quot;DateString&quot;: null,
+    &quot;DateStringPriority&quot;: 0,
+    &quot;DueDate&quot;: &quot;&quot;,
+    &quot;Recurrence&quot;: null,
+    &quot;ItemOrder&quot;: 2,
+    &quot;Priority&quot;: 4,
+    &quot;LastSyncedDateTime&quot;: &quot;/Date(1665972204567)/&quot;,
     &quot;Children&quot;: [
         
     ],
-    &quot;IsProjectShared&quot;: false,
-    &quot;ProjectShareOwnerName&quot;: null,
-    &quot;ProjectShareOwnerEmail&quot;: null,
-    &quot;IsShareApproved&quot;: false,
-    &quot;IsOwnProject&quot;: true,
-    &quot;LastSyncedDateTime&quot;: &quot;/Date(1665958446159)/&quot;,
-    &quot;LastUpdatedDate&quot;: &quot;/Date(1665958446160)/&quot;,
+    &quot;DueDateTime&quot;: null,
+    &quot;CreatedDate&quot;: &quot;/Date(1665972201883)/&quot;,
+    &quot;LastCheckedDate&quot;: &quot;/Date(1665972204537)/&quot;,
+    &quot;LastUpdatedDate&quot;: &quot;/Date(1665972204537)/&quot;,
     &quot;Deleted&quot;: false,
-    &quot;SyncClientCreationId&quot;: null
+    &quot;Notes&quot;: &quot;&quot;,
+    &quot;InHistory&quot;: true,
+    &quot;SyncClientCreationId&quot;: null,
+    &quot;DueTimeSpecified&quot;: true,
+    &quot;OwnerId&quot;: 705560
 }
 Request method:	GET
-Request URI:	https://todo.ly/api/projects/4026071.json
+Request URI:	https://todo.ly/api/items/11067815.json
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -203,37 +219,45 @@ Pragma: no-cache
 Content-Type: application/json; charset=utf-8
 Expires: -1
 Server: Microsoft-IIS/8.0
-Set-Cookie: ASP.NET_SessionId=djx31k42evpfc5uozfxwgodp; path=/; HttpOnly; SameSite=Lax
+Set-Cookie: ASP.NET_SessionId=fmlky5wttgfygtdesigubox1; path=/; HttpOnly; SameSite=Lax
 X-AspNetMvc-Version: 2.0
 X-AspNet-Version: 4.0.30319
 X-Powered-By: ASP.NET
-Date: Sun, 16 Oct 2022 22:14:07 GMT
-Content-Length: 405
+Date: Mon, 17 Oct 2022 02:03:25 GMT
+Content-Length: 553
 
 {
-    &quot;Id&quot;: 4026071,
-    &quot;Content&quot;: &quot;CatoUpdated2022&quot;,
-    &quot;ItemsCount&quot;: 0,
-    &quot;Icon&quot;: 0,
-    &quot;ItemType&quot;: 2,
+    &quot;Id&quot;: 11067815,
+    &quot;Content&quot;: &quot;CreateNewItem&quot;,
+    &quot;ItemType&quot;: 1,
+    &quot;Checked&quot;: true,
+    &quot;ProjectId&quot;: 4021963,
     &quot;ParentId&quot;: null,
+    &quot;Path&quot;: &quot;&quot;,
     &quot;Collapsed&quot;: false,
-    &quot;ItemOrder&quot;: 436,
+    &quot;DateString&quot;: null,
+    &quot;DateStringPriority&quot;: 0,
+    &quot;DueDate&quot;: &quot;&quot;,
+    &quot;Recurrence&quot;: null,
+    &quot;ItemOrder&quot;: 2,
+    &quot;Priority&quot;: 4,
+    &quot;LastSyncedDateTime&quot;: &quot;/Date(1665972205690)/&quot;,
     &quot;Children&quot;: [
         
     ],
-    &quot;IsProjectShared&quot;: false,
-    &quot;ProjectShareOwnerName&quot;: null,
-    &quot;ProjectShareOwnerEmail&quot;: null,
-    &quot;IsShareApproved&quot;: false,
-    &quot;IsOwnProject&quot;: true,
-    &quot;LastSyncedDateTime&quot;: &quot;/Date(1665958447672)/&quot;,
-    &quot;LastUpdatedDate&quot;: &quot;/Date(1665958446160)/&quot;,
+    &quot;DueDateTime&quot;: null,
+    &quot;CreatedDate&quot;: &quot;/Date(1665972201883)/&quot;,
+    &quot;LastCheckedDate&quot;: &quot;/Date(1665972204537)/&quot;,
+    &quot;LastUpdatedDate&quot;: &quot;/Date(1665972204537)/&quot;,
     &quot;Deleted&quot;: false,
-    &quot;SyncClientCreationId&quot;: null
+    &quot;Notes&quot;: &quot;&quot;,
+    &quot;InHistory&quot;: true,
+    &quot;SyncClientCreationId&quot;: null,
+    &quot;DueTimeSpecified&quot;: true,
+    &quot;OwnerId&quot;: 705560
 }
 Request method:	DELETE
-Request URI:	https://todo.ly/api/projects/4026071.json
+Request URI:	https://todo.ly/api/items/11067815.json
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -250,34 +274,42 @@ Pragma: no-cache
 Content-Type: application/json; charset=utf-8
 Expires: -1
 Server: Microsoft-IIS/8.0
-Set-Cookie: ASP.NET_SessionId=n1tl0bgheippt1bbwh3j0dao; path=/; HttpOnly; SameSite=Lax
+Set-Cookie: ASP.NET_SessionId=r3rbv4f5dnwtz0ihxnclirzs; path=/; HttpOnly; SameSite=Lax
 X-AspNetMvc-Version: 2.0
 X-AspNet-Version: 4.0.30319
 X-Powered-By: ASP.NET
-Date: Sun, 16 Oct 2022 22:14:08 GMT
-Content-Length: 404
+Date: Mon, 17 Oct 2022 02:03:26 GMT
+Content-Length: 552
 
 {
-    &quot;Id&quot;: 4026071,
-    &quot;Content&quot;: &quot;CatoUpdated2022&quot;,
-    &quot;ItemsCount&quot;: 0,
-    &quot;Icon&quot;: 0,
-    &quot;ItemType&quot;: 2,
+    &quot;Id&quot;: 11067815,
+    &quot;Content&quot;: &quot;CreateNewItem&quot;,
+    &quot;ItemType&quot;: 1,
+    &quot;Checked&quot;: true,
+    &quot;ProjectId&quot;: 4021963,
     &quot;ParentId&quot;: null,
+    &quot;Path&quot;: &quot;&quot;,
     &quot;Collapsed&quot;: false,
-    &quot;ItemOrder&quot;: 436,
+    &quot;DateString&quot;: null,
+    &quot;DateStringPriority&quot;: 0,
+    &quot;DueDate&quot;: &quot;&quot;,
+    &quot;Recurrence&quot;: null,
+    &quot;ItemOrder&quot;: 2,
+    &quot;Priority&quot;: 4,
+    &quot;LastSyncedDateTime&quot;: &quot;/Date(1665972206938)/&quot;,
     &quot;Children&quot;: [
         
     ],
-    &quot;IsProjectShared&quot;: false,
-    &quot;ProjectShareOwnerName&quot;: null,
-    &quot;ProjectShareOwnerEmail&quot;: null,
-    &quot;IsShareApproved&quot;: false,
-    &quot;IsOwnProject&quot;: true,
-    &quot;LastSyncedDateTime&quot;: &quot;/Date(1665958448904)/&quot;,
-    &quot;LastUpdatedDate&quot;: &quot;/Date(1665958448890)/&quot;,
+    &quot;DueDateTime&quot;: null,
+    &quot;CreatedDate&quot;: &quot;/Date(1665972201883)/&quot;,
+    &quot;LastCheckedDate&quot;: &quot;/Date(1665972204537)/&quot;,
+    &quot;LastUpdatedDate&quot;: &quot;/Date(1665972206893)/&quot;,
     &quot;Deleted&quot;: true,
-    &quot;SyncClientCreationId&quot;: null
+    &quot;Notes&quot;: &quot;&quot;,
+    &quot;InHistory&quot;: true,
+    &quot;SyncClientCreationId&quot;: null,
+    &quot;DueTimeSpecified&quot;: true,
+    &quot;OwnerId&quot;: 705560
 }
 </pre>
 </span>
@@ -290,7 +322,7 @@ Content-Length: 404
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at 16 oct. de 2022 18:14:21</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at 16 oct. de 2022 22:03:40</p>
 </div>
 </div>
 </body>

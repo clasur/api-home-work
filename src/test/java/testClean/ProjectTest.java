@@ -15,32 +15,35 @@ public class ProjectTest {
     JSONObject body= new JSONObject();
     RequestInfo requestInfo = new RequestInfo();
     @Test
-    public void verifyCRUDProject(){
+    public void verifyCRUDItem(){
 
-        body.put("Content","Cato2022");
-        requestInfo.setUrl(ApiConfiguration.CREATE_PROJECT);
+        body.put("Content","CreateNewItem");
+        body.put("ProjectId",4021963);
+        requestInfo.setUrl(ApiConfiguration.CREATE_ITEM);
         requestInfo.setBody(body.toString());
 
         response= FactoryRequest.make("post").send(requestInfo);
         response.then().body("Content",equalTo(body.get("Content"))).statusCode(200);
-        int idProj=response.then().extract().path("Id");
+        int idItem=response.then().extract().path("Id");
 
-        body.put("Content","CatoUpdated2022");
-        requestInfo.setUrl(String.format(ApiConfiguration.UPDATE_PROJECT,idProj));
+
+        body.put("Checked", true);
+        requestInfo.setUrl(String.format(ApiConfiguration.UPDATE_ITEM, idItem));
         requestInfo.setBody(body.toString());
         response= FactoryRequest.make("put").send(requestInfo);
         response.then().body("Content",equalTo(body.get("Content"))).statusCode(200);
 
-        requestInfo.setUrl(String.format(ApiConfiguration.READ_PROJECT,idProj));
+        requestInfo.setUrl(String.format(ApiConfiguration.READ_ITEM,idItem));
         requestInfo.setBody(body.toString());
         response= FactoryRequest.make("get").send(requestInfo);
         response.then().body("Content",equalTo(body.get("Content"))).statusCode(200);
 
-        requestInfo.setUrl(String.format(ApiConfiguration.DELETE_PROJECT,idProj));
+        requestInfo.setUrl(String.format(ApiConfiguration.DELETE_ITEM ,idItem));
         requestInfo.setBody(body.toString());
         response= FactoryRequest.make("delete").send(requestInfo);
         response.then().body("Content",equalTo(body.get("Content"))).statusCode(200);
 
     }
+
 
 }
